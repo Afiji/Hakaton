@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -40,10 +40,10 @@ header {
 }
 
 .burger-close {
-    display: none; /* Начнем с его скрытия */
+    display: none; /* Начнем с его скрытия 
 }
 
-.menu {
+/* .menu {
     position: fixed;
     top: 0;
     left: -250px;
@@ -70,4 +70,29 @@ header {
 
 .menu.active {
     left: 0;
+} */ 
+
+
+/* стили обычного хедера */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.background__for__left__size {
+    width: 964px;
+    height: 774px;
+    background-color: #F9F1E7;
+}
+
+.background__for__right__size {
+    width: 476px;
+    height: 774px;
+    background-color: #FCF8F3;
+    display: block;
+}
+
+
+/* стили обычного хедера */
