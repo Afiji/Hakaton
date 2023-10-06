@@ -124,7 +124,7 @@ header {
 
 .main__content img {
     position: absolute;
-} */ 
+}     старый код*/ 
 
 
 * {
@@ -188,8 +188,22 @@ header{
 
 .line {
     padding: 0 100px;
+    padding-bottom: 155px;
 }
 
+.main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 97px;
+    padding-right: 179px;
+}
 
 main .preline {
     width: 54px;
@@ -209,7 +223,6 @@ main .preline {
 .left-block__line {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .header-text {
@@ -238,6 +251,7 @@ main .preline {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
+    margin-bottom: 23px;
 }
 
 .main-text span {
@@ -247,6 +261,17 @@ main .preline {
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
+}
+
+.main__buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
 }
 
 .left-block button {
@@ -261,6 +286,7 @@ main .preline {
     text-transform: capitalize;
     border-radius: 12.412px;
     border: 1.5px solid #6C5FBC;
+    margin-bottom: 23px;
 }
 
 .left-block button:hover {
@@ -268,6 +294,12 @@ main .preline {
     border-radius: 12.412px;
     background: #6C5FBC;
     cursor: pointer;
+}
+
+.third__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .third__section p {
@@ -278,25 +310,25 @@ main .preline {
 }
 
 .circle {
-    width: 422px;
-    height: 424px;
-    flex-shrink: 0;
-    border-radius: 424px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
     background: linear-gradient(137deg, #6C5FBC 4.83%, #5144A0 98.22%);
     position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle img {
-    position: absolute;
-    /* top: 0; */
-    /* left: 0; */
-    /* padding-left: -10px; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Позволяет изображению заполнять всю площадь круга */
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto;
+    object-fit: cover; 
     border-radius: 50%;
 }
 
 .right-block {
-    display: inline;
+    
 }
