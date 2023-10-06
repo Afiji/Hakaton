@@ -75,10 +75,15 @@ header {
 
 /* стили обычного хедера */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container__for__back {
+    display: flex;
+    align-items: center;
 }
 
 .background__for__left__size {
@@ -88,11 +93,210 @@ header {
 }
 
 .background__for__right__size {
-    width: 476px;
+    width: 600px;
     height: 774px;
     background-color: #FCF8F3;
-    display: block;
 }
 
 
-/* стили обычного хедера */
+/* .header__container {
+    /* position: absolute; 
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* стили обычного хедера 
+
+.main__content img {
+    position: absolute;
+} */ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 57px 96px;
+    /* margin-top: 48px; */
+}
+
+.header__logo, .header__header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo p {
+    color: #6C5FBC;
+    font-family: Poppins;
+    font-size: 21.176px;
+    font-weight: 600;
+    line-height: 130%; 
+}
+
+.header__header__nav p {
+    color: #606060;
+    font-family: Inter;
+    font-size: 17.829px;
+    font-weight: 500;
+    line-height: 26.743px; /* 150% */
+    text-transform: capitalize;
+}
+
+
+.header__login__panel button {
+    color: #606060;
+    padding: 17.83px;
+    border: none;
+    background-color: white;
+    font-family: Inter;
+    font-size: 17.829px;
+    font-weight: 700;
+    line-height: 26.743px; 
+    text-transform: capitalize;
+}
+
+.header__login__panel button:hover {
+    cursor: pointer;
+    color: white;
+    background:  #6C5FBC;
+    border: none;
+    border-radius: 17.829px;
+}
+
+
+.line {
+    padding: 0 100px;
+}
+
+
+main .preline {
+    width: 54px;
+    height: 1px;
+    opacity: 0.2;
+    background: #201F1F;
+}
+
+.left-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 567px;
+    row-gap: 18px;
+}
+
+.left-block__line {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header-text {
+    color: #201F1F;
+    font-family: Poppins;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 90px */
+    letter-spacing: -3px;
+}
+
+.header-text span {
+    color: #5C4EAE;
+    font-family: Poppins;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -3px;
+}
+
+.main-text {
+    color: #676767;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+}
+
+.main-text span {
+    opacity: 0.7;
+    color: #6155AE;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.left-block button {
+    padding: 17px;
+    color: #6C5FBC;
+    font-family: Poppins;
+    font-size: 16.271px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.163px;
+    text-transform: capitalize;
+    border-radius: 12.412px;
+    border: 1.5px solid #6C5FBC;
+}
+
+.left-block button:hover {
+    color: white;
+    border-radius: 12.412px;
+    background: #6C5FBC;
+    cursor: pointer;
+}
+
+.third__section p {
+    color: var(--blue-gray-700, #334155);
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.circle {
+    width: 422px;
+    height: 424px;
+    flex-shrink: 0;
+    border-radius: 424px;
+    background: linear-gradient(137deg, #6C5FBC 4.83%, #5144A0 98.22%);
+    position: relative;
+}
+
+.circle img {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    /* padding-left: -10px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Позволяет изображению заполнять всю площадь круга */
+    border-radius: 50%;
+}
+
+.right-block {
+    display: inline;
+}
