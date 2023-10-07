@@ -6,70 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./burger.css">
+    <link rel="stylesheet" href="./swiper2.css">
 </head>
 <body>
-    
-    <!-- версия хедера с бургер меню 
-    <header class="mobile-header">
-        <div class="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="burger-close">×</div> Крестик
-        </div>
-    </header>
-    
 
-    <div class="backdrop"></div>
-    
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Funiro.</a></li>
-            <li><a href="#">Productsс</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Inspirations</a></li>
-        </ul>
-    </nav> 
-    версия хедера с бургер меню -->
-
-    <!-- версия обычного хедера с макета -->
-
-    
-
-
-    <!-- <header>
-        <div class="header__container">
-            <div class="header-nav">
-                <p>Funiro.</p>
-                <p>Products</p>
-                <img src="./images for header/Arrow-down.svg" alt="">
-                <p>Rooms</p>
-                <img src="./images for header/Arrow-down.svg" alt="">
-                <p>Inspirations</p>
-            </div>
-    
-            <div class="custom-panel">
-                <img src="./images for header/Heart.svg" alt="">
-                <img src="./images for header/Cart.svg" alt="">
-                <img src="./images for header/Ellipse 2.svg" alt="">
-            </div>
-        </div>
-
-        
-        
-    </header>
-
-    <main>
-        <div class="container__for__back">
-            <div class="background__for__left__size"></div>
-            <div class="background__for__right__size"></div>
-        </div>
-
-        <div class="main__content">
-            <img src="./images for header/1528 1.png" alt="">
-        </div>
-
-    </main> -->
 
     <!-- версия обычного хедера с макета -->
 
@@ -87,8 +27,8 @@
         </div>
 
         <div class="header__login__panel">
-            <button>Login</button>
-            <button>Sign up</button>
+            <a href="./login/login.html">Login</a>    
+            <a href="./login/login.html">Sing up</a>    
         </div>
     </header>
 
@@ -192,18 +132,61 @@
     <img class="line" src="./icons-header/Line 517.svg" alt="">
 
     <section class="restaurants">
+
+        <h2>Our Top <span>Restaurants</span></h2>
+
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"></div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+
+              <div class="swiper-slide">
+                <img src="./swiper1/Image.png" alt="">
+
+                <div class="slide-content">
+                    <p>The Chicken King</p>
+
+                    <div>
+                        <p>24min •</p>
+                        <img src="./swiper1/Star.svg" alt="">
+                        <p>4.8</p>
+                    </div>
+
+                    <img src="./swiper1/Bookmark.svg" alt="">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./swiper1/Image2.png" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./swiper1/Image.png" alt="">
+              </div>
+
             </div>
+
             <div class="swiper-pagination"></div>
-          </div>
+        </div>
     </section>
     
+    <img class="line" src="./icons-header/Line 517.svg" alt="">
+
+    <section class="dishes">
+        <div class="swiper2 mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./swiper2/Food Image (1).png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/food24.png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/Food3.png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/Food Image (1).png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/food24.png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/Food3.png" alt=""></div>
+            </div>
+
+            <div class="swiper-pagination2"></div>
+          </div>
+    </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="./burger-menu.js"></script>
+<script src="./swiper1.js"></script>
+<script src="./swiper2.js"></script>
 </body>
 </html>

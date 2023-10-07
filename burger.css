@@ -463,11 +463,35 @@ main .preline {
     transform: translate(-50%);
   }
 
-  /* swiper */
+  /* swiper 1*/
+
+  .restaurants h2 {
+    color: #323142;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25.558px; /* 73.024% */
+    text-align: center;
+    margin-bottom: 76px;
+  }
+
+  .restaurants span {
+    color: #6C5FBC;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25.558px;
+  }
 
   .swiper {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 80%;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
   }
 
   .swiper-slide {
@@ -477,6 +501,9 @@ main .preline {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column; /* Расположение изображения и текста в столбец */
+    text-align: center;
   }
 
   .swiper-slide img {
@@ -485,3 +512,21 @@ main .preline {
     height: 100%;
     object-fit: cover;
   }
+
+  .swiper-slide div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+  }
+
+
+  .slide-content {
+    display: flex; /* Устанавливаем flex-контейнер для блока с текстом */
+    flex-direction: row; /* Располагаем текст в столбец */
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Расстояние между элементами внутри блока */
+  }
+
+
