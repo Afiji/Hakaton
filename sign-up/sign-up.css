@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% высоты видимой области браузера */
+    background: linear-gradient(to left, #6C5FBC 45%, #ffffff 40%); /* Цветовой градиент */
+    scroll-behavior: smooth;
+}
+
+.logo {
+    margin-top: 32px;
+    margin-left: 48px;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 7.5%;
+    padding-top: 5%;
+}
+
+.container__right-side p {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    color: var(--others-white, #FFF);
+    /* body/medium/medium */
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.2px;
+}
+
+.container__right-side h2 {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    color: var(--others-white, #FFF);
+    /* Heading/H2 */
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 110%; /* 44px */
+}
+
+.container__left-side {
+    /* max-width: 55%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6%;
+}
+
+.logreg-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 280px;
+    /* max-width: 900%; */
+}
+
+.logreg-box h2 {
+    text-align: center;
+    color: #323142;
+    font-family: Poppins;
+    font-size: 35.25px;
+    font-weight: 600;
+    line-height: 125%; /* 44.063px */
+    letter-spacing: -1.41px;
+    margin-bottom: 48px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .p{
+    /* max-width: 300px; */
+    color: rgba(50, 49, 66, 0.35);
+    font-family: Poppins;
+    font-size: 20.011px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 33px 0;
+    text-align: center;
+}
+
+.google, .apple {
+    padding: 10px 40px;
+    border-radius: 13.341px;
+    background: #F5F5F5;
+}
+
+.login-register p {
+    color: #3E3E3E;
+    font-family: Poppins;
+    font-size: 18.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.189px;
+}
+
+.user-name {
+    padding: 15px 30px;
+    flex-shrink: 0;
+    border-radius: 14.275px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.email {
+    padding: 15px 30px;
+    flex-shrink: 0;
+    border-radius: 14.275px;
+    background: #F5F5F5;
+    border: none;
+    margin-top: 25px;
+}
+
+.password {
+    padding: 15px 30px;
+    flex-shrink: 0;
+    border-radius: 14.275px;
+    background: #F5F5F5;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.remember-forgot {
+    text-align: right;
+    color: #6C5FBC;
+    font-family: Poppins;
+    font-size: 15.564px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 13px 98px;
+    border-radius: 15.564px;
+    background: #6C5FBC;
+    border: none;
+    color: #F3F5F6;
+    font-family: Poppins;
+    font-size: 17.788px;
+    font-weight: 400;
+    letter-spacing: 0.534px;
+    margin-bottom: 23px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+}

@@ -4,34 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./burger.css">
+    <link rel="stylesheet" href="./swiper2.css">
+    <link rel="stylesheet" href="./favorite-section.css">
 </head>
 <body>
-    
-    <!-- версия хедера с бургер меню -->
-    <header class="mobile-header">
-        <div class="burger-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <!-- <div class="burger-close">×</div> Крестик -->
+
+
+    <!-- версия обычного хедера с макета -->
+
+    <header>
+        <div class="header__logo">
+            <img src="./icons-header/Logo.svg" alt="Main-logo">
+            <p>eatly</p>
+        </div>
+
+        <div class="header__header__nav">
+            <a href="#menu">Menu</a>
+            <a>Blog</a>
+            <a>Pricing</a> 
+            <a>Contact</a>
+        </div>
+
+        <div class="header__login__panel">
+            <a href="./login/login.html">Login</a>    
+            <a href="./login/login.html">Sing up</a>    
         </div>
     </header>
-    
 
-    <div class="backdrop"></div>
-    
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Funiro.</a></li>
-            <li><a href="#">Productsс</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Inspirations</a></li>
-        </ul>
-    </nav>
-    <!-- версия хедера с бургер меню -->
-    
+    <img class="line" src="./icons-header/Line 517.svg" alt="">
 
-<script src="./burger-menu.js"></script>
+
+    <main>
+
+        <div class="centered-container">
+
+            <div class="left-block">
+
+                <div class="left-block__line">
+                    <div class="preline"></div>
+                    <p>OVER 1000 USERS</p>
+                </div>
+                
+                <p class="header-text">Enjoy Foods All Over The <span>World</span></p>
+                <p class="main-text">EatLy help you set saving goals, earn cash back offers,
+                     Go to disclaimer for more details and get paychecks up to two days early. 
+                     Get a <span>$20 bonus.</span></p>
+    
+                <div class="main__buttons">
+                    <button>Get Started</button>
+                    <button>Go Pro</button>
+                </div>
+                
+                <div class="third__section">
+                    <img src="./main/trustpilot-1 1.svg" alt="">
+                    <img src="./main/Star.svg" alt="">
+    
+                    <p>4900+</p>
+                </div>
+                
+            </div>
+    
+            <div class="right-block">
+                <div class="circle">
+                    <img src="./main/Food Image.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section class="about-us">
+
+        <div class="container">
+            <div class="container__frist__block">
+                <p>10K+</p>
+                <p>Satisfied Costumers <br>
+                    All Great Over The World </p>
+            </div>
+
+            <div class="container__second__block">
+                <p>4M</p>
+                <p>Healthy Dishes Sold <br>
+                    Including Milk Shakes Smooth</p>
+            </div>
+
+            <div class="container__third__block">
+                <p>99.99%</p>
+                <p>Reliable Customer Support <br> 
+                    We Provide Great Experiences</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="application">
+
+        <div class="application__container">
+
+            <div class="application__fisrt__block">
+                <img src="./app-section/application-removebg-preview.png" alt="">
+                <img src="./app-section/Illustration 01.svg" alt="">
+            </div>
+
+            <div class="application__second__block">
+                 <h2>Premium <span>Quality</span> <br>For Your Health</h2>
+
+                 <ul>
+                    <li>Premium quality food is made with ingredients that<br> are packed with essential vitamins, minerals.</li>
+                    <li>These foods promote overall wellness by support<br> healthy digestion and boosting immunity</li>
+                 </ul>
+
+                 <button>Download &#8594</button>
+
+                 <img src="./app-section/Vector 14.svg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <img class="line" src="./icons-header/Line 517.svg" alt="">
+
+    <section class="restaurants">
+
+        <h2>Our Top <span>Restaurants</span></h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img src="./swiper1/Image.png" alt="">
+
+                <div class="slide-content">
+                    <div class="block">
+                      <p class="name">The Chicken King</p>
+                    </div>
+                  
+                    <div class="block delivery">
+                      <p>24min</p>
+                      <img src="./swiper1/Star.svg" alt="">
+                      <p>4.8</p>
+                    </div>
+                  
+                    <div class="block">
+                      <img src="./swiper1/Bookmark.svg" alt="">
+                    </div>
+                </div>
+                  
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./swiper1/Image2.png" alt="">
+
+                <div class="slide-content">
+                    <div class="block">
+                      <p class="name">The Burger King</p>
+                    </div>
+                  
+                    <div class="block delivery">
+                      <p>24min</p>
+                      <img src="./swiper1/Star.svg" alt="">
+                      <p>4.9</p>
+                    </div>
+                  
+                    <div class="block">
+                      <img src="./swiper1/Bookmark.svg" alt="">
+                    </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./swiper1/Image.png" alt="">
+
+                <div class="slide-content">
+                    <div class="block">
+                      <p class="name">The Chicken King</p>
+                    </div>
+                  
+                    <div class="block delivery">
+                      <p>24min</p>
+                      <img src="./swiper1/Star.svg" alt="">
+                      <p>4.8</p>
+                    </div>
+                  
+                    <div class="block">
+                      <img src="./swiper1/Bookmark.svg" alt="">
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <img class="line" src="./icons-header/Line 517.svg" alt="">
+
+    <section class="dishes">
+        <!-- <div class="swiper2 mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./swiper2/Food Image (1).png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/food24.png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/Food3.png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/Food Image (1).png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/food24.png" alt=""></div>
+              <div class="swiper-slide"><img src="./swiper2/Food3.png" alt=""></div>
+            </div>
+
+            <div class="swiper-pagination2"></div>
+        </div> -->
+
+        <div id="menu">
+            <h2>Our Top <span>Dishes</span></h2>
+        </div>
+
+        <div class="container">
+            <div class="blockk main__block">
+                <div></div>
+                <p class="dsc"></p>
+            </div>
+        
+            <div class="block container__for__miniBlocks">
+                
+            </div>
+        </div>
+    </section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./swiper1.js"></script>
+<script src="./swiper2.js"></script>
+<script src="./favotite-section.js"></script>
 </body>
 </html>
