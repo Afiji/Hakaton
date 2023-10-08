@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh; /* 100% высоты видимой области браузера */
     background: linear-gradient(to left, #6C5FBC 45%, #ffffff 40%); /* Цветовой градиент */
+    scroll-behavior: smooth;
 }
 
 .logo {

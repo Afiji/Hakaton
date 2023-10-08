@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./burger.css">
     <link rel="stylesheet" href="./swiper2.css">
+    <link rel="stylesheet" href="./favorite-section.css">
 </head>
 <body>
 
@@ -20,10 +21,10 @@
         </div>
 
         <div class="header__header__nav">
-            <p>Menu</p>
-            <p>Blog</p>
-            <p>Pricing</p>
-            <p>Contact</p>
+            <a href="#menu">Menu</a>
+            <a>Blog</a>
+            <a>Pricing</a> 
+            <a>Contact</a>
         </div>
 
         <div class="header__login__panel">
@@ -142,24 +143,61 @@
                 <img src="./swiper1/Image.png" alt="">
 
                 <div class="slide-content">
-                    <p>The Chicken King</p>
-
-                    <div>
-                        <p>24min •</p>
-                        <img src="./swiper1/Star.svg" alt="">
-                        <p>4.8</p>
+                    <div class="block">
+                      <p class="name">The Chicken King</p>
                     </div>
-
-                    <img src="./swiper1/Bookmark.svg" alt="">
+                  
+                    <div class="block delivery">
+                      <p>24min</p>
+                      <img src="./swiper1/Star.svg" alt="">
+                      <p>4.8</p>
+                    </div>
+                  
+                    <div class="block">
+                      <img src="./swiper1/Bookmark.svg" alt="">
+                    </div>
                 </div>
+                  
               </div>
 
               <div class="swiper-slide">
                 <img src="./swiper1/Image2.png" alt="">
+
+                <div class="slide-content">
+                    <div class="block">
+                      <p class="name">The Burger King</p>
+                    </div>
+                  
+                    <div class="block delivery">
+                      <p>24min</p>
+                      <img src="./swiper1/Star.svg" alt="">
+                      <p>4.9</p>
+                    </div>
+                  
+                    <div class="block">
+                      <img src="./swiper1/Bookmark.svg" alt="">
+                    </div>
+                </div>
               </div>
 
               <div class="swiper-slide">
                 <img src="./swiper1/Image.png" alt="">
+
+                <div class="slide-content">
+                    <div class="block">
+                      <p class="name">The Chicken King</p>
+                    </div>
+                  
+                    <div class="block delivery">
+                      <p>24min</p>
+                      <img src="./swiper1/Star.svg" alt="">
+                      <p>4.8</p>
+                    </div>
+                  
+                    <div class="block">
+                      <img src="./swiper1/Bookmark.svg" alt="">
+                    </div>
+                </div>
               </div>
 
             </div>
@@ -171,7 +209,7 @@
     <img class="line" src="./icons-header/Line 517.svg" alt="">
 
     <section class="dishes">
-        <div class="swiper2 mySwiper2">
+        <!-- <div class="swiper2 mySwiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="./swiper2/Food Image (1).png" alt=""></div>
               <div class="swiper-slide"><img src="./swiper2/food24.png" alt=""></div>
@@ -182,11 +220,29 @@
             </div>
 
             <div class="swiper-pagination2"></div>
-          </div>
+        </div> -->
+
+        <div id="menu">
+            <h2>Our Top <span>Dishes</span></h2>
+        </div>
+
+        <div class="container">
+            <div class="blockk main__block">
+                <div></div>
+                <p class="dsc"></p>
+            </div>
+        
+            <div class="block container__for__miniBlocks">
+                
+            </div>
+        </div>
     </section>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./swiper1.js"></script>
 <script src="./swiper2.js"></script>
+<script src="./favotite-section.js"></script>
 </body>
 </html>
