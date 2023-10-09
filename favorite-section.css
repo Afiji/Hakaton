@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -30,7 +34,7 @@
 
 .img:hover {
     cursor: pointer;
-    scale: 0.9;
+    /* scale: 0.9; */
     border: 5px solid bisque;
 }
 
