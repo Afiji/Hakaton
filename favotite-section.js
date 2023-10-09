@@ -62,6 +62,8 @@ data.forEach(el => {
 
 
     img.addEventListener('click', () => {
+        saveToLocalStorage(el.img);
+
         main__block.innerHTML = ''
 
         const boxMain = document.createElement('div')
@@ -96,3 +98,25 @@ data.forEach(el => {
     box.append(img)
     miniBlocks.append(box)
 })
+
+
+function saveToLocalStorage(selectedImage) {
+    localStorage.setItem('selectedImage', selectedImage);
+
+
+    function loadFromLocalStorage() {
+        const selectedImage = localStorage.getItem('selectedImage');
+        if (selectedImage) {
+          // Если есть сохранённая картинка, отобразите её в главном блоке
+          main__block.innerHTML = '';
+          const boxMain = document.createElement('div');
+          const clonedImage = document.createElement('img');
+          // Добавьте остальные элементы и стилизацию, как в вашем коде
+          clonedImage.src = selectedImage;
+          boxMain.append(clonedImage);
+          main__block.append(boxMain);
+        }
+    }
+}
+
+loadFromLocalStorage();
